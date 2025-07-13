@@ -1,0 +1,28 @@
+{
+  "name": "typescript---waap-to-tg-using-bailys-for-raftar---javed",
+  "version": "1.0.0",
+  "description": "telegram to whatsapp forwarding",
+  "main": "telegramBot.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/telegramBot.js"
+  },
+  "author": "Jatin Ahirwar",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "axios": "^1.10.0",
+    "baileys": "^6.7.18",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "pino": "^9.7.0",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/qrcode-terminal": "^0.12.2",
+    "typescript": "^5.8.3"
+  }
+}
