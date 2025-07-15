@@ -20,9 +20,9 @@ app.post('/webhook', async (req, res) => {
         console.log("📨 Received channel_post from:", channel);
         console.log("📦 Raw body:", req.body);
         // Handle direct message (optional)
-        if (message && message.text) {
-            const chatId = message.chat.id;
-            console.log('💬 Received direct message:', message.text);
+        if (message && message.text || req.body.chat && req.body.chat.id) {
+            const chatId = req.body.chat.id;
+            console.log('💬 Received direct message:', req.body.text);
             console.log("🆔 Telegram Chat ID:", chatId);
         }
         // Handle channel post
