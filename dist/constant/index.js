@@ -1,6 +1,6 @@
 const GLOBAL = {
     SOCK: null,
-    GROUP_ID: null,
+    GROUP_ID: "120363418260496652@g.us",
     TELEGRAM_ID: -1002361966401,
     MESSAGE: null,
     IMAGE_PATH: null,
