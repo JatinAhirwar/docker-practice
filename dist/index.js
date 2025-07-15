@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.json());
 // Prompt user input before connecting
 // GLOBAL.GROUP_ID = await askQuestion('\n📝 Enter WhatsApp Group ID to send message: ');
-GLOBAL.GROUP_ID = "120363383098721276@g.us";
+// GLOBAL.GROUP_ID = "120363383098721276@g.us";
 // GLOBAL.MESSAGE = await askQuestion('💬 Enter the message to send: ');
 GLOBAL.MESSAGE = '555';
 // GLOBAL.IMAGE_PATH = await askQuestion('🖼️ (Optional) Enter image path (or press Enter to skip): ');
@@ -45,8 +45,8 @@ async function startBot() {
                 // Send message
                 // await sendMessageToGroup(GLOBAL.SOCK, GLOBAL.GROUP_ID.trim(), GLOBAL.MESSAGE.trim(), resolvedImagePath);
                 console.log("Now Starting telegram bot");
-                GLOBAL.GROUP_ID = await askQuestion('\n📝 Enter WhatsApp Group ID to send message: ');
-                GLOBAL.TELEGRAM_ID = Number(await askQuestion('\n📝 Enter Telegram Channel ID to send message: '));
+               // GLOBAL.GROUP_ID = await askQuestion('\n📝 Enter WhatsApp Group ID to send message: ');
+                // GLOBAL.TELEGRAM_ID = Number(await askQuestion('\n📝 Enter Telegram Channel ID to send message: '));
                 GLOBAL.TELEGRAM_BOT_START = true;
                 console.log("Telegram to Whatsapp bot started!! This bot is created by Jatin \n Telegram id : jatin9911 \n whatsapp no. 9540454252 ");
             }
